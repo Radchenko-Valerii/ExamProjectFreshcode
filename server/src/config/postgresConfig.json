@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "password",
-    "database": "todo-dev",
+    "database": "squad_help_dev",
     "host": "db-dev",
     "dialect": "postgres",
     "operatorsAliases": "Op"
