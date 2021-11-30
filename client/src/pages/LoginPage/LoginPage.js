@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import LoginForm from '../../components/LoginForm/LoginForm';
-import Logo from '../../components/Logo';
-import styles from './LoginPage.module.sass';
-import { clearErrorSignUpAndLogin } from '../../actions/actionCreator';
-import CONSTANTS from '../../constants';
+import React from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import LoginForm from "../../components/LoginForm/LoginForm";
+import Logo from "../../components/Logo";
+import styles from "./LoginPage.module.sass";
+import { clearErrorSignUpAndLogin } from "../../actions/actionCreator";
+import CONSTANTS from "../../constants";
 
 const LoginPage = (props) => (
   <div className={styles.mainContainer}>
@@ -15,7 +15,14 @@ const LoginPage = (props) => (
         <div className={styles.linkLoginContainer}>
           <Link
             to="/registration"
-            style={{ textDecoration: 'none' }}
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignItems: "center",
+              textDecoration: "none",
+              width: "inherit",
+              height: "inherit",
+            }}
           >
             <span>Signup</span>
           </Link>
